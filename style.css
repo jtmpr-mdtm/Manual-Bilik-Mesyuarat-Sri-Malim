@@ -1,0 +1,175 @@
+/* PALET WARNA AESTHETIC & ELEGAN (MDTM MANUAL KENDIRI)*/
+:root {
+    --mdtm-primary: #0f172a;       /* Deep Navy / Midnight */
+    --mdtm-secondary: #1e3a8a;     /* Royal Navy */
+    --mdtm-accent: #d97706;        /* Warm Gold / Amber Accent */
+    --mdtm-blue-accent: #2563eb;   /* Modern Electric Blue */
+    --mdtm-bg: #f8fafc;            /* Ultra Soft Slate Gray Background */
+    --mdtm-card-bg: #ffffff;       /* Putih Bersih */
+    --mdtm-text: #334155;          /* Charcoal Slate Text */
+}
+
+/* Base Style */
+body {
+    background-color: var(--mdtm-bg) !important;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--mdtm-text);
+    padding-bottom: 90px;
+}
+
+/*HEADER SECTION (Modern Gradient + Glowing Effects)*/
+.header-section {
+    background: linear-gradient(135deg, var(--mdtm-primary) 0%, var(--mdtm-secondary) 60%, var(--mdtm-blue-accent) 100%) !important;
+    color: white;
+    padding: 3rem 1.5rem 4rem 1.5rem !important;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Corak Gelombang / Bulatan Hiasan di Header */
+.header-section::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 240px;
+    height: 240px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.header-section::after {
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    left: -40px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.header-logo {
+    max-width: 85px;
+    height: auto;
+    margin-bottom: 12px;
+    background: #ffffff;
+    padding: 6px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+/*KAD TERAPUNG (WiFi & Accordion Styling)*/
+.wifi-card, .card, .accordion-item {
+    background-color: var(--mdtm-card-bg) !important;
+    border: none !important;
+    border-radius: 18px !important;
+    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 8px 10px -6px rgba(15, 23, 42, 0.05) !important;
+    transition: all 0.25s ease-in-out;
+}
+
+/* WiFi Card Specific */
+.wifi-card {
+    margin-top: -30px;
+    padding: 22px;
+    border-top: 4px solid var(--mdtm-accent) !important;
+    position: relative;
+    z-index: 10;
+}
+
+/*ACCORDION (PANDUAN)*/
+.accordion-item {
+    margin-bottom: 14px;
+    overflow: hidden;
+    border-left: 5px solid var(--mdtm-blue-accent) !important; /* Jalur aksen di kiri */
+}
+
+.accordion-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px -5px rgba(15, 23, 42, 0.1) !important;
+}
+
+.accordion-button {
+    font-weight: 600;
+    color: var(--mdtm-primary);
+    background-color: var(--mdtm-card-bg) !important;
+    padding: 18px 20px;
+    border-radius: 18px !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #f1f5f9 !important;
+    color: var(--mdtm-blue-accent);
+    font-weight: 700;
+}
+
+/* Penanda Nombor Langkah (Badge) */
+.step-badge {
+    background-color: var(--mdtm-blue-accent);
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    margin-right: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.3);
+}
+
+/* MEDIA BOX (Gaya Gambar & Video)*/
+.media-box {
+    width: 100%;
+    border-radius: 12px;
+    margin: 14px 0;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    background-color: #f8fafc;
+}
+
+.media-box img, .media-box video {
+    display: block;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+/*FLOATING BOTTOM BAR (Bantuan ICT) */
+.contact-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px); /* Kesan Blur Frosted Glass */
+    border-top: 1px solid #e2e8f0;
+    padding: 12px 20px;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.06);
+    z-index: 1000;
+}
+
+.btn-help {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+    color: white !important;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 10px 24px;
+    border: none;
+    box-shadow: 0 6px 18px rgba(239, 68, 68, 0.35);
+    transition: transform 0.2s ease;
+}
+
+.btn-help:hover {
+    transform: scale(1.02);
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%) !important;
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Kendiri Bilik Mesyuarat Sri Malim - MDTM</title>
+    
+    <!-- link ke css -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Kendiri Bilik Mesyuarat Sri Malim - MDTM</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --mdtm-primary: #0f172a;
+            --mdtm-secondary: #2563eb;
+            --mdtm-accent: #d97706;
+            --mdtm-bg: #eef2f6;
+            --mdtm-card-bg: #ffffff;
+            --mdtm-text: #334155;
+        }
+
+        body {
+            background-color: var(--mdtm-bg);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333333;
+            padding-bottom: 80px;
+        }
+
+        .header-section {
+            background: linear-gradient(135deg, var(--mdtm-primary), var(--mdtm-secondary));
+            color: white;
+            padding: 25px 15px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        .header-logo {
+            max-width: 80px;
+            height: auto;
+            margin-bottom: 10px;
+            background: white;
+            padding: 5px;
+            border-radius: 50%;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        .wifi-card {
+            background: #ffffff;
+            border-left: 5px solid var(--mdtm-accent);
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            padding: 18px;
+            margin-top: -20px;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #e8f4fc;
+            color: var(--mdtm-primary);
+            font-weight: bold;
+        }
+
+        .accordion-button {
+            font-weight: 600;
+            border-radius: 8px !important;
+        }
+
+        .accordion-item {
+            border-radius: 8px !important;
+            margin-bottom: 12px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            overflow: hidden;
+        }
+
+        .step-badge {
+            background-color: var(--mdtm-primary);
+            color: white;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            margin-right: 8px;
+            font-weight: bold;
+        }
+
+        /* style media (Gambar / Video) */
+        .media-box {
+            width: 100%;
+            border-radius: 10px;
+            margin: 12px 0;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .media-box img, .media-box video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .notice-box {
+            background-color: #fff8e1;
+            border: 1px solid #ffe082;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 0.9rem;
+        }
+
+        .contact-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #ffffff;
+            border-top: 1px solid #e0e0e0;
+            padding: 12px 20px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .btn-help {
+            background-color: #df616e;
+            color: white;
+            font-weight: 600;
+            border-radius: 30px;
+            width: 100%;
+        }
+
+        .btn-help:hover {
+            background-color: #c94e5b;
+            color: white;
+        }
+    </style>
+
+<body>
+
+    <!-- HEADER / LOGO MDTM -->
+    <div class="header-section">
+        <img src="logo MDTM.jpg" alt="Logo MDTM" class="header-logo">
+        <h5 class="fw-bold mb-1">MAJLIS DAERAH TANJONG MALIM</h5>
+        <p class="small mb-0 text-light">Manual Kendiri Bilik Mesyuarat Sri Malim</p>
+    </div>
+
+    <div class="container mt-3">
+
+        <h6 class="fw-bold text-secondary mb-3"><i class="fa-solid fa-list-check me-2"></i>PANDUAN PENGGUNAAN BILIK MESYUARAT</h6>
+
+        <!-- ACCORDION PANDUAN -->
+        <div class="accordion" id="manualAccordion">
+
+            <!-- 1. KOMPUTER -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        <i class="fa-solid fa-desktop me-2 text-primary"></i> 1. Tatacara Menggunakan Komputer
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#manualAccordion">
+                    <div class="accordion-body small">
+                        <!-- CONTOH GAMBAR / VIDEO KOMPUTER -->
+                        <div class="media-box">
+                            <video controls autoplay muted loop style="width: 320px; max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px;">
+                                <source src="on komp.mp4" type="video/mp4">
+                            </video>
+
+                        <ol class="list-unstyled mb-0 small">
+                            <li class="mb-3">
+                                <span class="step-badge">1</span><strong>Sambungkan Kuasa:</strong> Pastikan suis plug 3-pin pada punca kuasa di dinding telah di-"ON"-kan.
+                            </li>
+                            <li class="mb-3">
+                                <span class="step-badge">2</span><strong>Hidupkan Komputer:</strong> Tekan butang <strong>POWER</strong> butang 'ON' di penjuru bawah monitor.
+                            </li>
+                            <li class="mb-3">
+                                <span class="step-badge">3</span><strong>Matikan Komputer (Shut Down):</strong> Tekan butang <strong>Shut Down</strong>.
+                            </li>
+                            <li>
+                                <span class="step-badge">4</span><strong>Tutup Suis:</strong> Cabut/OFF suis plug 3-pin selepas komputer dipadam sepenuhnya.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. PROJEKTOR -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        <i class="fa-solid fa-video me-2 text-primary"></i> 2. Tatacara Penggunaan Projektor
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#manualAccordion">
+                    <div class="accordion-body small">
+                        <!-- CONTOH GAMBAR / VIDEO PROJEKTOR -->
+                        <div class="media-box">
+                            <video controls autoplay muted loop style="width: 320px; max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px;">
+                                <source src="projektor.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <ol class="list-unstyled mb-0 small">
+                            <li class="mb-3">
+                                <span class="step-badge">1</span><strong>Sambungkan Kuasa:</strong> Pastikan kabel kuasa peranti (switcher/projector hub) disambungkan dengan betul ke punca kuasa.
+                            </li>
+                            <li class="mb-3">
+                                <span class="step-badge">2</span><strong>Hidupkan Peranti:</strong>  Tekan suis kuasa pada peranti ke kedudukan "ON" sehingga lampu penunjuk merah dan hijau menyala.
+                            </li>
+                            <li class="mb-3">
+                                <span class="step-badge">3</span><strong>Pilih Saluran:</strong> Tekan butang saluran yang berkenaan pada panel hadapan peranti (jenama MT-VIKI) untuk memilih sumber paparan yang diingini.
+                            </li>
+                            <li>
+                                <span class="step-badge">4</span><strong>Tutup Suis:</strong> Matikan suis peranti dan cabut sambungan kuasa selepas selesai menggunakannya.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. SCAN VIRUS -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                        <i class="fa-solid fa-shield-halved me-2 text-primary"></i> 3. Cara Imbas/Scan Virus Pendrive
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#manualAccordion">
+                    <div class="accordion-body small">
+                        <!-- CONTOH GAMBAR / VIDEO SCAN VIRUS -->
+                        <div class="media-box">
+                            <video controls autoplay muted loop style="width: 320px; max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px;">
+                                <source src="scan virus.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                         <ol class="list-unstyled mb-0 small">
+                            <li class="mb-3">
+                                <span class="step-badge">1</span><strong>Sambungkan USB:</strong> Cucuk pemacu USB ke dalam port USB yang terdapat pada bahagian hadapan CPU komputer.
+                            </li>
+                            <li class="mb-3">
+                                <span class="step-badge">2</span><strong>Imbas Peranti:</strong>  Tekan suis kuasa pada peranti ke kedudukan "ON" sehingga lampu penunjuk merah dan hijau menyala.
+                            </li>
+                            <li class="mb-3">
+                                <span class="step-badge">3</span><strong>Tunggu Hingga Selesai:</strong> Biarkan proses imbasan fail atau folder berjalan sehingga paparan menunjukkan status selesai tanpa ancaman ("No malware found").
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. SAFELY REMOVE PENDRIVE -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                        <i class="fa-solid fa-hard-drive me-2 text-primary"></i> 4. Cara Mencabut (Eject) Pendrive
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#manualAccordion">
+                    <div class="accordion-body small">
+                        <!-- CONTOH GAMBAR / VIDEO EJECT PENDRIVE -->
+                        <div class="media-box">
+                            <video controls autoplay muted loop style="width: 320px; max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px;">
+                                <source src="ejectPendrive.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <p class="mb-2">Sila pastikan pendrive anda tidak mempunyai sebarang masalah</p>
+                         <ol class="list-unstyled mb-0 small">
+                            <li class="mb-3">
+                                <span class="step-badge">1</span><strong>Pilih Ikon USB:</strong> Klik pada ikon utiliti USB atau pemberitahuan perkakasan di bahagian sudut bawah kanan skrin komputer (taskbar).
+                            </li>
+                            <li class="mb-3">
+                                <span class="step-badge">2</span><strong>Pilih "Safely Remove Hardware":</strong> Klik pada pilihan untuk mengeluarkan peranti USB secara selamat daripada senarai yang dipaparkan.
+                            </li>
+                            <li class="mb-3">
+                                <span class="step-badge">3</span><strong>Tunggu Notifikasi:</strong> Tunggu sehingga mesej pengesahan "Safe To Remove Hardware" muncul pada skrin.
+                            </li>
+                            <li class="mb-3">
+                                <span class="step-badge">4</span><strong>Cabut Pemacu USB:</strong> Tarik keluar pemacu USB dari port CPU komputer dengan selamat.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-4 text-muted small">
+            <p>Hak Cipta Terpelihara &copy; Bahagian Teknologi Maklumat, Pelancongan & Rekreasi<br><strong>Majlis Daerah Tanjong Malim</strong></p>
+        </div>
+
+    </div>
+
+    <!-- CONTACT / HELP BOTTOM BAR -->
+    <div class="contact-bar text-center">
+        <a href="tel:054563455" class="btn btn-help py-2">
+            <i class="fa-solid fa-headset me-2"></i> Perlukan Bantuan ICT? Hubungi BTM (Ext: 05-4563455)
+        </a>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
